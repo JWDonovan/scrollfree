@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "ScrollFree",
+    "version": "0.0.1",
+    "description": "Web Extension to disable scroll blocking on websites that abuse their power.",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "run_at": "document_end",
+            "js": [ "script.js" ]
+        }
+    ]
+}
